@@ -1,6 +1,5 @@
 import createCache from '@emotion/cache'
-import { CacheProvider, Theme } from '@emotion/react'
-import { ThemeProvider } from '@emotion/react/types/theming'
+import { CacheProvider, ThemeProvider, Theme } from '@emotion/react'
 import { createContext, PropsWithChildren, useContext } from 'react'
 
 declare module '@emotion/react' {

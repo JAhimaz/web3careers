@@ -1,8 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
+import Button from '../components/atoms/Button'
+import Home from './Home'
 
 export const router = createBrowserRouter([
   // Main Page
-  { path: '/', element: <div>Main</div> },
+  { path: '/', element: <Home /> },
   // Add a Job Form Page
   { path: 'add-job', element: <div>Post a Job</div> },
   // Company List Page
