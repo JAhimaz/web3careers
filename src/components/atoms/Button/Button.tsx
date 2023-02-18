@@ -72,7 +72,7 @@ const Button = <T extends ButtonElementType>({
           'color': theme.white,
           'transition': '.25s',
           'fontWeight': '600',
-          'fontSize': '18px',
+          'fontSize': '1.125rem',
           'fontFamily': 'inherit',
           ...variantStyle,
           ...(disabled ? { ':hover': undefined} : {}),

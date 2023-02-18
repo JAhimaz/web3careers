@@ -1,9 +1,10 @@
+import Navigation from "@layout/Navigation"
 import Button from "../components/atoms/Button"
 
 const Home = () => {
   return (
     <>
-      <Button>Button</Button>
+      <Navigation />
     </>
   )
 }
