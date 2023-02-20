@@ -4,6 +4,7 @@ import Statistic from "@components/molecules/Statistic"
 import Input from "@components/atoms/Input"
 import Pill from "@components/atoms/Pill"
 import { useState } from "react"
+import Spinner from "@components/atoms/Spinner/Spinner"
 
 const Home = () => {
 
