@@ -14,17 +14,20 @@ const Home = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "5.25rem",
       }}>
         <Typography size="xl" weight={600}>Let's Get Started. 🔍</Typography>
         <Typography size="md">Find Web3, Cryptocurrency and Blockchain related Job listings.</Typography>
-        <input></input>
+        <input css={{
+          marginTop: "1.5rem",
+        }}></input>
         <div id="site-statistics" css={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
           width: "60vw",
-          marginTop: "2rem",
+          marginTop: "3.25rem",
         }}>
           <Statistic header="432" subheader="Companies" />
           <Statistic header="5,201" subheader="Job Listings" />
