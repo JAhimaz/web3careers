@@ -13,7 +13,8 @@ const Statistic = (props : StatisticDataProps) => {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            width: "100%",
+            textAlign: "center",
+            width: "fit-content",
             height: "100%",
             gap: "-0.5rem"
         }}>

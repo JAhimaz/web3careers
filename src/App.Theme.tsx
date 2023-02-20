@@ -8,6 +8,7 @@ declare module '@emotion/react' {
     foreground: string
     primary: string
     secondary: string
+    inputPlaceholder: string
     inputBackground: string
     white: string
     dim: string
@@ -20,7 +21,8 @@ export const mainTheme: Theme = {
   foreground: '#D9D9D9',
   primary: '#141414',
   secondary: '#7B7B7B',
-  inputBackground: '#A1A1A1',
+  inputPlaceholder: '#A1A1A1',
+  inputBackground: '#F4F4F4',
   white: '#FBFBFB',
   dim: '#A9A9A9',
   verified: '#45B732' // Green
