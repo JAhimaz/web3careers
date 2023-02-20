@@ -9,13 +9,13 @@ export const router = createBrowserRouter([
   // Main Page
   { path: '/', element: <Home /> },
   // Add a Job Form Page
-  { path: 'add-job', element: <div>Post a Job</div> },
+  { path: '/add-job', element: <div>Post a Job</div> },
   // Mission Page
-  { path: 'mission', element: <div>Our Mission</div> },
+  { path: '/mission', element: <div>Our Mission</div> },
   // Company List Page
-  { path: 'companies', element: <Companies /> },
+  { path: '/companies', element: <Companies /> },
   // Individual Company Page
-  { path: 'companies/:companyId', element: <div>Company</div> },
+  { path: '/companies/:companyId', element: <div>Company</div> },
   // Create a 404 page
   { path: '*', element: <div>Not Found</div> },
 ])
