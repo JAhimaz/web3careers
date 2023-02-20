@@ -1,7 +1,9 @@
-import Navigation from '@layout/Navigation'
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
-import Home from './Home'
+
+// import Home with react.lazy
+const Home = React.lazy(() => import('./Home'))
+const Companies = React.lazy(() => import('./Companies'))
 
 export const router = createBrowserRouter([
   // Main Page
@@ -11,7 +13,7 @@ export const router = createBrowserRouter([
   // Mission Page
   { path: 'mission', element: <div>Our Mission</div> },
   // Company List Page
-  { path: 'companies', element: <div>Companies</div> },
+  { path: 'companies', element: <Companies /> },
   // Individual Company Page
   { path: 'companies/:companyId', element: <div>Company</div> },
   // Create a 404 page

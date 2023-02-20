@@ -2,8 +2,8 @@ import Navigation from "@layout/Navigation"
 import Typography from "@components/atoms/Typography"
 import Statistic from "@components/molecules/Statistic"
 import Input from "@components/atoms/Input"
-import Pill from "@components/atoms/Pill/Pill"
-import { useEffect, useState } from "react"
+import Pill from "@components/atoms/Pill"
+import { useState } from "react"
 
 const Home = () => {
 
@@ -31,10 +31,6 @@ const Home = () => {
     }));
   };
 
-  useEffect(() => {
-    console.log(filterTags);
-  }, [filterTags]);
-
   return (
     <>
       {/* Would be nice to put this inside the router and shared amongst pages. */}
@@ -54,10 +50,14 @@ const Home = () => {
         }}>Find Web3, Cryptocurrency and Blockchain related Job listings.</Typography>
         <Input 
         placeholder="Role, Company, Location or Tag..."
+        type="text"
+        name="main-search"
+        id="main-search"
+        onBlur={(e) => console.log(e.target.value)}
         css={{
           marginTop: "1.5rem",
           width: "50%",
-        }}></Input>
+        }} />
         <div id="site-statistics" css={{
           display: "flex",
           flexDirection: "row",
@@ -67,9 +67,9 @@ const Home = () => {
           marginTop: "3.25rem",
           gap: "5.75rem",
         }}>
-          <Statistic header="432" subheader="Companies" />
-          <Statistic header="5,201" subheader="Job Listings" />
-          <Statistic header="16,000+" subheader="Applicants" />
+          <Statistic header={432} subheader="Companies" />
+          <Statistic header={5201} subheader="Job Listings" />
+          <Statistic header={16322} subheader="Applicants" />
         </div>
         { /* Section for tags */ }
         <section css={{
@@ -85,6 +85,7 @@ const Home = () => {
             <Pill
               onClick={(tag) => handleTagClick(tag)}
               active={filterTags[tag] ?? false}
+              key={tag}
             >
               {tag}
             </Pill>
